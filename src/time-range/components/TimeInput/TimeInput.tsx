@@ -17,5 +17,5 @@ export const TimeInput = ({ value, onChange }: TimeInputProps) => {
     [onChange]
   );
 
-  return <input className={styles.TimeInput} type="time" defaultValue={value} onChange={handleChange} />;
+  return <input className={styles.TimeInput} type="time" value={value} onChange={handleChange} />;
 };
