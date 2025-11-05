@@ -14,6 +14,7 @@ type TimeRange = {
 function App() {
   const { context, data, sendMessage } = useFieldExtension<TimeRange>({ start: "", end: "" }, {
     origin: "*",
+    height: 56,
   });
 
   const [start, setStart] = useState("");
