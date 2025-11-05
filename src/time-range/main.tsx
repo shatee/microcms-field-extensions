@@ -30,6 +30,11 @@ function App() {
     });
   }, [start, end, sendMessage]);
 
+  useEffect(() => {
+    setStart(data.start);
+    setEnd(data.end);
+  }, [data]);
+
   return (
     <div className={styles.Container}>
       <TimeInput value={start} onChange={setStart} />
