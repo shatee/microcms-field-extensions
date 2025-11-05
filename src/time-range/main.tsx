@@ -10,7 +10,7 @@ type TimeRange = {
 
 function App() {
   const { data, sendMessage } = useFieldExtension<TimeRange>({ start: "", end: "" }, {
-    origin: parent.location.origin ?? location.origin,
+    origin: "http://xxxx.microcms.io",
   });
 
   const [start, setStart] = useState(data.start);
