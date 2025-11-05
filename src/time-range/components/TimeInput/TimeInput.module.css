@@ -1,4 +1,17 @@
 .TimeInput {
+  padding: 16px;
+  border: 1px solid #cdcde0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: 40px;
+  font-size: 16px;
+  box-shadow: 0 1px 4px #00000014;
+}
+
+.TimeInput:focus {
+  outline: 1px solid #563bff;
+  outline-offset: -1px;
 }
 
 .TimeInput::-webkit-calendar-picker-indicator {

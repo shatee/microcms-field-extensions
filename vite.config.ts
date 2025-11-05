@@ -6,8 +6,8 @@ import { readdirSync } from 'node:fs'
 const apps = readdirSync(resolve(__dirname, 'src'));
 
 // https://vite.dev/config/
-export default defineConfig({
-  base: '/microcms-field-extensions/',
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/microcms-field-extensions/time-range/' : '/',
   plugins: [react()],
   build: {
     outDir: resolve(__dirname, 'dist'),
@@ -22,4 +22,4 @@ export default defineConfig({
   },
   root: resolve(__dirname, 'src'),
   appType: 'mpa',
-})
+}))

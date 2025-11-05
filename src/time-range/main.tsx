@@ -2,6 +2,7 @@ import { useFieldExtension } from "microcms-field-extension-react";
 import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { TimeInput } from "./components/TimeInput/TimeInput";
+import styles from "./main.module.css";
 
 const TITLE = "Time Range";
 
@@ -34,7 +35,7 @@ function App() {
   }, [start, end, sendMessage]);
 
   return (
-    <div>
+    <div className={styles.Container}>
       <TimeInput value={start} onChange={setStart} />
       〜
       <TimeInput value={end} onChange={setEnd} />
