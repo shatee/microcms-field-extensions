@@ -3,6 +3,8 @@ import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { TimeInput } from "./components/TimeInput/TimeInput";
 
+const TITLE = "Time Range";
+
 type TimeRange = {
   start: string;
   end: string;
@@ -10,7 +12,7 @@ type TimeRange = {
 
 function App() {
   const { data, sendMessage } = useFieldExtension<TimeRange>({ start: "", end: "" }, {
-    origin: "http://xxxx.microcms.io",
+    origin: "*",
   });
 
   console.log(data);
@@ -22,6 +24,7 @@ function App() {
 
   useEffect(() => {
     sendMessage({
+      title: TITLE,
       description: `${start} 〜 ${end}`,
       data: {
         start: start,
