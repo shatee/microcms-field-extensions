@@ -104,8 +104,8 @@ function App() {
     }
 
     sendMessage({
-      title: TITLE,
-      description: newData.prefecture,
+      title: newData.prefecture,
+      description: formatAddressString(newData),
       data: newData,
     });
   };
