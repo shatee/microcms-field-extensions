@@ -4,7 +4,8 @@ microCMS の拡張フィールド
 
 ## 拡張フィールド一覧
 
-* TBD
+* time-range
+  * URL: https://shatee.github.io/microcms-field-extensions/time-range/
 
 ## 開発
 
