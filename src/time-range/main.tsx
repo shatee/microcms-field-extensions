@@ -13,11 +13,16 @@ function App() {
     origin: "http://xxxx.microcms.io",
   });
 
+  console.log(data);
+
   const [start, setStart] = useState(data.start);
   const [end, setEnd] = useState(data.end);
 
+  console.log(start, end);
+
   useEffect(() => {
     sendMessage({
+      description: `${start} 〜 ${end}`,
       data: {
         start: start,
         end: end,
