@@ -16,8 +16,8 @@ function App() {
     origin: "*",
   });
 
-  const [start, setStart] = useState(data.start);
-  const [end, setEnd] = useState(data.end);
+  const [start, setStart] = useState("");
+  const [end, setEnd] = useState("");
 
   useEffect(() => {
     sendMessage({
@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     setStart(data.start);
     setEnd(data.end);
-  }, [data]);
+  }, [data.start, data.end]);
 
   return (
     <div className={styles.Container}>
