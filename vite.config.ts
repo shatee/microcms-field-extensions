@@ -7,6 +7,7 @@ const apps = readdirSync(resolve(__dirname, 'src'));
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/microcms-field-extensions/',
   plugins: [react()],
   build: {
     outDir: resolve(__dirname, 'dist'),
