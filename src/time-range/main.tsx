@@ -31,13 +31,11 @@ function App() {
   }, [start, end, sendMessage]);
 
   useEffect(() => {
-    setStart(data.start);
-    setEnd(data.end);
-  }, [data.start, data.end]);
-
-  if (!context?.content.id) {
-    return null;
-  }
+    if (context?.content.id) {
+      setStart(data.start);
+      setEnd(data.end);
+    }
+  }, [context?.content.id]);
 
   return (
     <div className={styles.Container}>
