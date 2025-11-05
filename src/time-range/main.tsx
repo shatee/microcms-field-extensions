@@ -12,7 +12,7 @@ type TimeRange = {
 }
 
 function App() {
-  const { data, sendMessage } = useFieldExtension<TimeRange>({ start: "", end: "" }, {
+  const { context, data, sendMessage } = useFieldExtension<TimeRange>({ start: "", end: "" }, {
     origin: "*",
   });
 
@@ -34,6 +34,10 @@ function App() {
     setStart(data.start);
     setEnd(data.end);
   }, [data.start, data.end]);
+
+  if (!context?.content.id) {
+    return null;
+  }
 
   return (
     <div className={styles.Container}>
