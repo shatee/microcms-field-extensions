@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      microcms-field-extension-react:
+        specifier: ^1.1.0
+        version: 1.1.0
       react:
         specifier: ^19.1.1
         version: 19.2.0
@@ -42,6 +45,9 @@ importers:
       globals:
         specifier: ^16.4.0
         version: 16.5.0
+      microcms-field-extension-api:
+        specifier: ^1.1.0
+        version: 1.1.0
       typescript:
         specifier: ~5.9.3
         version: 5.9.3
@@ -889,6 +895,12 @@ packages:
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
+
+  microcms-field-extension-api@1.1.0:
+    resolution: {integrity: sha512-5u1aICypG2H4ewd+PvcVVP+jxiFsqk9D/o+xIblXVhMT9M9AWQDaisNShA2tsu7GqB+UVtymQUwLrAO6PX0rQw==}
+
+  microcms-field-extension-react@1.1.0:
+    resolution: {integrity: sha512-Pg26LpnXLFYe/tPONUCwrP3i6SK6d5QWfaDE90Vy3t7CAtRB8yuuHz/Otjsw9Ffs3BL4j5yv6ppxoeciQHy2nw==}
 
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
@@ -1920,6 +1932,10 @@ snapshots:
       yallist: 3.1.1
 
   merge2@1.4.1: {}
+
+  microcms-field-extension-api@1.1.0: {}
+
+  microcms-field-extension-react@1.1.0: {}
 
   micromatch@4.0.8:
     dependencies:

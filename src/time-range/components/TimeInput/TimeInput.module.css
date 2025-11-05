@@ -1,0 +1,6 @@
+.TimeInput {
+}
+
+.TimeInput::-webkit-calendar-picker-indicator {
+  display: none;
+}
